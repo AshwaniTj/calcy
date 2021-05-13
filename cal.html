@@ -7,7 +7,7 @@
   </head>
   <body>
     <div class="calculator">
-      <input type="number" id="display">
+      <input type="text" id="display">
       <div class="calculator-buttons">
         <button onclick="buttonClick(1)" class="calc-button">1</button>
         <button onclick="buttonClick(2)" class="calc-button">2</button>
@@ -23,7 +23,7 @@
         <button onclick="operatorClick('*')" class="calc-button">*</button>
         <button class="calc-button">c</button>
         <button onclick="buttonClick(0)" class="calc-button">0</button>
-        <button class="calc-button">=</button>
+        <button onclick="equalClick()" class="calc-button">=</button>
         <button onclick="operatorClick('/')" class="calc-button">/</button>
         
       </div>
