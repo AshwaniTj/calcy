@@ -1,9 +1,25 @@
 var num1, num2, opr;
 function buttonClick(num){
+
+  
     var oldValue = document.getElementById('display').value;
+   
     if(oldValue=='+'){
         oldValue='';
     }
+
+  else  if(oldValue=='-'){
+        oldValue='';
+    }
+
+    else  if(oldValue=='*'){
+        oldValue='';
+    }
+
+    else if(oldValue=='/'){
+        oldValue='';
+    }
+
     document.getElementById('display').value = oldValue+num;
 }
 
@@ -19,5 +35,17 @@ function equalClick(){
     num2=parseInt(num2);
     if(opr=='+') {
         document.getElementById('display').value=num1+num2;
+    }
+
+   else if(opr=='-') {
+        document.getElementById('display').value=num1-num2;
+    }
+
+    else if(opr=='*') {
+        document.getElementById('display').value=num1*num2;
+    }
+
+    else if(opr=='/') {
+        document.getElementById('display').value=num1/num2;
     }
 }
